@@ -1,0 +1,40 @@
+I have a Go project that I am sending the full source code of as a file only and you are allowed to access the file whenever you want.
+
+Unbreakable rules:
+1. Answer only based on the files that were sent.
+2. Do not use any prior knowledge, other versions, guesses, or previous experience with this project.
+4. Keep the file paths, file names, and folder structure exactly as on this GitHub.
+5. Do not use words like "usually", "probably", "similar to", "seems to".
+6. If you are not sure about something or do not have access to a file, or cannot read a long file, or cannot convert it, say so explicitly, incomplete answers are unacceptable.
+7. Before any analysis or conversion, you must declare the actual list of files present.
+8. Do not convert any code unless I have explicitly given you permission.
+
+Project Goal:
+Completely convert the project from Go to Python, preserving 100% of the behavior, inputs, and outputs.
+No new features added, no features removed.
+No need to write tests; just the original code.
+
+Conversion Requirements:
+- Each converted section should be explained:
+* What was converted from Go to Python
+* What does that section do
+* Does the Python code behave exactly the same as the Go code
+- If a section depends on other files, explicitly state that it will be converted later.
+- Write the full Go code, don't summarize it.
+- Don't write a setup file for Python.
+
+Steps in order (each step in a separate message):
+1) Check the actual structure of the project and announce:
+- Detailed list of files
+- Analysis of the go files, what each file does
+- Dependencies between files
+- Entrypoint or entrypoints of the project
+2) Check how this structure is implemented in Python:
+- What files should be created
+- What dependencies between files will be
+- What structure should the python code have
+- Check which file we should start from for the conversion so that the hardware is correctly compiled.
+3) Create the Python files (each file in a separate message)
+- For each file, first read the file again and again, then do these steps
+- If the go code file is long and you cannot answer in one message, split the go code and send it.
+- Do the conversion to Python in parts as well so that there are no mistakes.
